@@ -1,0 +1,38 @@
+.main {
+  padding: 10px;
+  height: 100%;
+  margin: 15px 0 17px 0;
+  background: linear-gradient(to right, #fff, #f3f3f3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.panel-container {
+  width: 100%;
+  padding: 2%;
+}
+
+.panelicon {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.panelbox {
+  text-align: center;
+  padding: 6%;
+}
+
+.submain {
+  background: linear-gradient(to right, #fff, #f3f3f3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
+.submain-title {
+  padding: 3px;
+  text-align: center;
+}
+
+img.img-border{
+  border-radius: 50%;
+  height:90px ;
+}

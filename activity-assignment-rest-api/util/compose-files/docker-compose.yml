@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+
+  postgres:
+    image: postgres:9.6-alpine
+    environment:
+      - POSTGRES_DB=tacxdb
+      - POSTGRES_USER=postgres
+
+  # pgadmin4@pgadmin.org / admin
+  pgadmin:
+    image: fenglc/pgadmin4
+    ports:
+      - "5050:5050"

@@ -1,0 +1,42 @@
+.panelstyle {
+  margin: 15px 0 15px 0;
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to right, #fff, #f3f3f3);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  -webkit-transition: width .2s, margin-left .2s, height .2s, margin-top .2s;
+  transition: width .2s, margin-left .2s, height .2s, margin-top .2s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.panelstyle:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-left: -1%;
+  width: 98%;
+  height: 196px;
+  margin-top: 17px;
+  margin-left: 1%;
+}
+
+.panelicon {
+  min-height: 100px;
+  width: 100%;
+}
+
+.paneltitle {
+  height: 40px;
+  width: 100%;
+}
+
+.panelsubtitle {
+  height: 60px;
+  width: 100%;
+}
+
+fa {
+  font-size: 3.5em;
+  color: #19197b;
+}

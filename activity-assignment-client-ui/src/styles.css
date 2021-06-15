@@ -1,0 +1,59 @@
+.ag-root {
+    border: none !important;
+}
+
+.ag-header {
+    background-color: #19197b !important;
+    border-bottom: 1px solid #19197b !important;
+    color: #ffffff !important;
+}
+
+.ag-header-cell {
+    line-height: 60px !important;
+    cursor: pointer !important;
+}
+
+.ag-header-cell::after {
+    height: 44px !important;
+}
+
+.ag-icon.ag-icon-menu {
+    stroke: #ffffff !important;
+    height: 60px !important;
+}
+
+.color-font {
+    color: #fff;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #19197b;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color: #19197b;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {
+    color: #19197b;
+    font-size: .8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mat-app-background {
+    background-color: #19197b;
+}
+
+.right {
+    background-color: #e8f1f1;
+}
+
+body {
+    background-color: #f3f1f1;
+}

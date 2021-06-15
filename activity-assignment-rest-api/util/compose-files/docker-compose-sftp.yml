@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  sftp:
+    image: atmoz/sftp
+    ports:
+      - "22:22"
+    command: tester:password:::files

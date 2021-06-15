@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "types": [
+      "highcharts"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "test.ts",
+    "**/*.spec.ts",
+    "**/*.mock.ts"
+  ]
+}

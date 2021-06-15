@@ -1,0 +1,45 @@
+.login {
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 420px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: calc(34%);
+}
+
+h3 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+}
+
+.login-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.login-full-width {
+    width: 100%;
+}
+
+.mybtn {
+    margin-top: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}

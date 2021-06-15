@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/V1_0_0/table/activity_files.sql
+  - include:
+      file: db/V1_0_0/table/activity.sql
+  - include:
+      file: db/V1_0_0/table/record.sql

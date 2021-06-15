@@ -1,0 +1,26 @@
+spring:
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+    properties:
+      hibernate:
+        id.new_generator_mappings: true
+        cache:
+          use_second_level_cache: false
+          use_query_cache: false
+        generate_statistics: true
+        jdbc.time_zone: UTC
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        session:
+          events:
+            log: false
+  liquibase:
+    change-log: classpath:db/changelog-master.yml
+    enabled: true

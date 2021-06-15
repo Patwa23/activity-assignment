@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+}
+
+.mat-card {
+  margin-bottom: 60px;
+}
+
+.full {
+  width: 100%;
+}
+
+.input-full-width {
+  width: 100%;
+}
+
+.left-margin {
+  margin-left: 10px;
+}

@@ -1,0 +1,31 @@
+<mat-card class="login">
+    <img src="../../../assets/img/app-logo.png" class="logo">
+    <h3>Login</h3>
+    <form class="login-form" (ngSubmit)="onLogin(f)" #f="ngForm">
+
+        <mat-form-field class="login-full-width">
+            <input matInput placeholder="Username" id="username" name="username" ngModel required [pattern]="usernamePattern" #uname="ngModel">
+            <mat-error *ngIf="uname.invalid">
+                Username is
+                <strong>required</strong>
+            </mat-error>
+            <mat-error *ngIf="uname.errors?.pattern">
+                Invalid Username
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="login-full-width">
+            <input matInput placeholder="Password" id="password" name="password" ngModel required [pattern]="passwordPattern" #pswd="ngModel"
+                [type]="hide ? 'text':'password'">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            <mat-error *ngIf="pswd.invalid">
+                Password is
+                <strong>required</strong>
+            </mat-error>
+            <mat-error *ngIf="pswd.errors?.pattern">
+                Invalid password policy - lowercase letters, uppercase letters, numbers,symbols, atleast 6 char)
+            </mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="primary" class="btn btn-primary btn-lg btn-block mybtn"> LOGIN </button>
+    </form>
+</mat-card>

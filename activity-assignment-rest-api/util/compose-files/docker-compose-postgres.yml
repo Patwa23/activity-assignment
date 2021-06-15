@@ -1,0 +1,31 @@
+version: '2.1'
+
+services:
+  postgres:
+    image: postgres:9.6-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=tacxdb
+      - POSTGRES_USER=postgres
+      - POSTGRES_HOST_AUTH_METHOD=trust
+
+  postgres-test:
+    image: postgres:9.6-alpine
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_DB=tacxdb-test
+      - POSTGRES_USER=postgres
+      - POSTGRES_HOST_AUTH_METHOD=trust
+
+  # url - http://localhost:5050/
+  # username - pgadmin4@pgadmin.org
+  # password - admin
+  pgadmin:
+    image: fenglc/pgadmin4
+    ports:
+      - "5050:5050"
+    links:
+      - postgres
+      - postgres-test

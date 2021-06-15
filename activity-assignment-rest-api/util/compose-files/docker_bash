@@ -1,0 +1,13 @@
+#!/bin/bash
+COMMAND=$1
+
+if [ $COMMAND == "up" ]; then
+	docker-compose -f docker-compose-postgres.yml -f docker-compose-sftp.yml up -d
+elif [ $COMMAND == "stop" ]; then
+	docker-compose -f docker-compose-postgres.yml -f docker-compose-sftp.yml stop
+elif [ $COMMAND == "rm" ]; then
+	docker-compose -f docker-compose-postgres.yml -f docker-compose-sftp.yml rm -f
+else
+	echo "No command found!"
+  exit 1
+fi

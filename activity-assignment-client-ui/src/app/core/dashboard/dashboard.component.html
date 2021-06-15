@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="row">
+    <div class="panelbox col-lg-3 col-md-6 col-sm-12">
+      <div class="panelstyle">
+        <div class="panelcontent">
+          <h1 class="bignumber"> {{ totalRequest }}</h1>
+        </div>
+        <div class="paneltitle">
+          <h2> Total Request</h2>
+        </div>
+      </div>
+    </div>
+    <div class="panelbox col-lg-3 col-md-6 col-sm-12">
+      <div class="panelstyle">
+        <div class="panelcontent">
+          <h1 class="bignumber">{{ totalOkResponse }}</h1>
+        </div>
+        <div class="paneltitle">
+          <h2> OK response</h2>
+        </div>
+      </div>
+    </div>
+    <div class="panelbox col-lg-3 col-md-6 col-sm-12">
+      <div class="panelstyle">
+        <div class="panelcontent">
+          <h1 class="bignumber"> {{ total4xxResponse }}</h1>
+        </div>
+        <div class="paneltitle">
+          <h2> 4xx response</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="panelbox col-lg-3 col-md-6 col-sm-12">
+      <div class="panelstyle">
+        <div class="panelcontent">
+          <h1 class="bignumber"> {{ total5xxResponse }}</h1>
+        </div>
+        <div class="paneltitle">
+          <h2> 5xx response </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="panelbox col-lg-6 col-md-12">
+      <div class="panelstyle">
+        <div class="panelcontent">
+          <div [chart]="chart1"></div>
+        </div>
+        <div class="paneltitle">
+          <h2> Response Time</h2>
+        </div>
+        <div class="panelsubtitle">
+          <h4> Average response time of all requests </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="panelbox col-lg-6 col-md-12">
+      <div class="panelstyle">
+        <div class="panelcontent">
+          <div [chart]="chart2"></div>
+        </div>
+        <div class="paneltitle">
+          <h2> Request / Response Status </h2>
+        </div>
+        <div class="panelsubtitle">
+          <h4> Traffic Metrics</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

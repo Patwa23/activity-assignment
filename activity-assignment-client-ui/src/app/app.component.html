@@ -1,0 +1,5 @@
+<div class="container-fluid">
+	<app-header></app-header>
+	<app-maincontainer></app-maincontainer>
+	<app-footer *ngIf="!router.url.startsWith('/reports/')"></app-footer>
+</div>

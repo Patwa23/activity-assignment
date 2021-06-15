@@ -1,0 +1,45 @@
+<div class="headerbox shadow">
+	<div class="brandbox">
+		<div class="container-fluid">
+			<a class="navbar-brand">
+				<img src="../../../assets/img/app-logo.png" height="40" width="100">
+			</a>
+		</div>
+	</div>
+
+	<div class="navbox">
+		<div class="container-fluid">
+			<nav class="navbar navbar-default navbar-expand-sm">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnavbar" aria-controls="mainnavbar"
+				    aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="mainnavbar">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link active" routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" routerLink="/assignment" routerLinkActive="active">Activity</a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link" routerLink="/profile" routerLinkActive="active">Profile</a>
+						</li>
+					</ul>
+
+
+					<!-- Navbar right with login and settings options  -->
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link with-icon" *ngIf="!authService.isAuthenticated()" routerLink="/login">Login</a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link with-icon" (click)="onLogout()" *ngIf="authService.isAuthenticated()" routerLink="/login">Logout</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
